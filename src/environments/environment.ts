@@ -8,22 +8,34 @@ export const environment = {
 
 export const SpotifyConfiguration = {
   clientId: '6fa3daaca88d47e797acf777c6ba8b2a',
-  authEndPoint: 'https://accounts.spotify.com/authorize',
-  redirectUrl: 'http//localhost:4200/login/',
+  authEndpoint: 'https://accounts.spotify.com/authorize',
+  redirectUrl: 'http://localhost:4200/login/',
   scopes: [
-    "playlist-read-collaborative",
+    "user-read-currently-playing", // musica tocando agora.
+    "user-read-recently-played", // ler musicas tocadas recentemente
+    "user-read-playback-state", // ler estado do player do usuario
+    "user-top-read", // top artistas e musicas do usuario
+    "user-modify-playback-state", // alterar do player do usuario.
+    "user-library-read", // ler biblioteca dos usuarios
+    "playlist-read-private", // ler playlists privads
+    "playlist-read-collaborative", // ler playlists colaborativas
     "playlist-modify-public",
-    "playlist-read-private",
-    "playlist-modify-private",
-    "user-modify-playback-state",
-    "user-read-currently-playing user-read-recently-played",
-    "user-read-playback-position",
-    "user-top-read",
-    "streaming",
-    "user-library-modify",
-    "user-library-read"        
+    "playlist-modify-private"
   ]
 }
+
+
+// scopes: [
+//   "playlist-read-collaborative",
+//   "playlist-read-private",
+//   "user-modify-playback-state",
+//   "user-read-currently-playing user-read-recently-played",
+//   "user-read-playback-position",
+//   "user-top-read",
+//   "streaming",
+//   "user-library-modify",
+//   "user-library-read"
+// ]
 
 /*
  * For easier debugging in development mode, you can import the following file
