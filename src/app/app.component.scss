@@ -1,0 +1,58 @@
+@import '../assets/utils/placeholders';
+@import '../assets/styles/variables.scss';
+
+img {
+    &.logo-spotify {
+        position: absolute;
+        width: 16%;
+        left: 76%;
+        top: 4%;
+
+        @media(max-width: 768px) {
+            width: 28%;
+            left: 65%;
+            top: 8%;
+        }
+    }
+}
+
+hr {
+    position: relative;
+    right: 46%;
+    border-bottom: 1px solid $white-default;
+
+    @media(min-width: 769px) {
+        rotate: 90deg;
+    }
+}
+
+span {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: 1em;
+
+    @media(max-width: 768px) {
+        margin: 0.8em;
+    }
+
+}
+
+h1 {
+    margin: 1em 5em;
+    @extend %title-responsive
+}
+
+h2 {
+    margin: 1em 6.8em;
+    font-weight: 300;
+    @extend %title-responsive
+}
+
+h3 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+    @media(max-width: 768px) {
+        font-size: 0.6rem;
+    }
+}
