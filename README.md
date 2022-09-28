@@ -1,6 +1,15 @@
-# DelaMix
+# DJ Data Set & Mix | API Spotify
+Organizador de estudos de música e set list para mixagem
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+
+
+## Sobre
+Este projeto é um projeto Open Source incentivando todes a serem destemides em suas contribuições. O projeto trata de construir um organizador de estudos de música e set list para mixagem, inspirado pelas oficinas do projeto TPM Todas Podem Mixar.
+
+![image](https://user-images.githubusercontent.com/42470334/192818343-ba8dac73-ec05-4988-a056-497bcc4c4102.png)
+
+![image](https://user-images.githubusercontent.com/42470334/192818249-4f2ce050-7703-442b-a724-1fd40a0615d0.png)
 
 ## Development server
 
@@ -9,6 +18,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
 
 ## Build
 
