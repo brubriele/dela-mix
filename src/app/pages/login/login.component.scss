@@ -15,12 +15,12 @@
                 img {
 
                         &.rotate-center {
-                                width: 64vw;
-                                border-radius: 0 60% 0 0;
+                                width: 70vw;
+                                border-radius: 0 46% 0 0;
                                 position: fixed;
                                 opacity: 0.8;
                                 top: 36%;
-                                left: 13%;
+                                left: 10%;
                                 -webkit-animation: kenburns-bottom-left 5s ease-out both;
                                 animation: kenburns-bottom-left 5s ease-out both;
 
@@ -41,7 +41,7 @@
                         border: 0;
                         cursor: pointer;
                         position: fixed;
-                        left: 76%;
+                        left: 82%;
                         bottom: 74%;
 
                         @media(max-width: 768px) {
