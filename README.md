@@ -3,13 +3,17 @@ Organizador de estudos de música e set list para mixagem
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
-
 ## Sobre
 Este projeto é um projeto Open Source incentivando todes a serem destemides em suas contribuições. O projeto trata de construir um organizador de estudos de música e set list para mixagem, inspirado pelas oficinas do projeto TPM Todas Podem Mixar.
 
-![image](https://user-images.githubusercontent.com/42470334/192818343-ba8dac73-ec05-4988-a056-497bcc4c4102.png)
+![image](https://user-images.githubusercontent.com/42470334/193395088-ba3882a6-a31e-4f43-a507-f8ed2d503693.png)
 
-![image](https://user-images.githubusercontent.com/42470334/192818249-4f2ce050-7703-442b-a724-1fd40a0615d0.png)
+![image](https://user-images.githubusercontent.com/42470334/193395069-e44010cc-df4b-4797-ba20-3afb48f67fd2.png)
+
+
+## Conceito/Design
+Tokens e paleta de cores têm como referência Jota DS, Design System Open Source da Meiuca
+https://jota.meiuca.co/
 
 ## Development server
 
