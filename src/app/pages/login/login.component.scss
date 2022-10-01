@@ -12,6 +12,27 @@
                 flex-direction: column;
                 justify-content: space-around;
 
+                iframe {
+                        position: fixed;
+                        z-index: 2;
+                        width: 30%;
+                        bottom: 0;
+                        position: fixed;
+                        height: 13%;
+                        right: 61%;
+                        opacity: 0.64;
+
+                        &:hover {
+                                opacity: inherit;
+                        }
+
+                        @media(max-width: 768px) {
+                                opacity: inherit;
+                                width: 100%;
+                                right: 0;
+                        }
+                }
+
                 img {
 
                         &.rotate-center {
@@ -25,16 +46,15 @@
                                 animation: kenburns-bottom-left 5s ease-out both;
 
                                 @media(max-width: 768px) {
-                                        width: 72%;
-                                        top: 62%;
+                                        width: 65%;
+                                        top: 68%;
+                                        left: auto;
                                 }
                         }
                 }
 
                 button {
-                        font-size: 1.5rem;
                         min-width: 200px;
-                        padding: 20px;
                         border-radius: 500px;
                         background-color: $green-action-primary;
                         color: white;
@@ -43,6 +63,8 @@
                         position: fixed;
                         left: 82%;
                         bottom: 74%;
+                        font-size: 1.2rem;
+                        padding: 14px;
 
                         @media(max-width: 768px) {
                                 font-size: 0.8rem;
