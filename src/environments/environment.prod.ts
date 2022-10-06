@@ -4,8 +4,8 @@ export const environment = {
 
 export const SpotifyConfiguration = {
   clientId: '6fa3daaca88d47e797acf777c6ba8b2a',
-  authEndPoint: 'https://accounts.spotify.com/authorize',
-  redirectUrl: 'http//localhost:4200/login/',
+  authEndpoint: 'https://accounts.spotify.com/authorize',
+  redirectUrl: 'https://dj-set-mix-data.web.app/login/',
   scopes: [
     "playlist-read-collaborative",
     "playlist-modify-public",
