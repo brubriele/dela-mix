@@ -4,19 +4,18 @@
 @import './assets/brand-tokens/typography.scss';
 
 html, body {
-    width: 100%;
-    height: 100%;
-    background-image: url(./assets/images/circle-scatter-haikei-3.svg);
-    background-size: cover;
-    background-attachment:fixed;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-
+    display: flex;
+    margin: 0 2%;   
     @media(max-width: 760px) {
-    background-image: url(./assets/images/circle-scatter-haikei-brand-mobile.svg);
-
+        // background-image: url(./assets/images/circle-scatter-haikei-brand-mobile.svg);
+        
     }
+}
+
+body {
+    background-color: #1474FF;
+    border-left: 1px solid white;
+
 }
 
 * {
