@@ -3,25 +3,46 @@
 @import './assets/brand-tokens/colors.scss';
 @import './assets/brand-tokens/typography.scss';
 
-html, body {
+html,
+body {
     display: flex;
-    margin: 0 2%;   
-    @media(max-width: 760px) {
-        // background-image: url(./assets/images/circle-scatter-haikei-brand-mobile.svg);
-        
-    }
+    margin: 0 2%;
+    overflow: hidden;
 }
 
 body {
     background-color: #1474FF;
     border-left: 1px solid white;
 
+
 }
 
+
+
+.color-change-3x {
+    -webkit-animation: color-change-3x 4s linear infinite alternate both;
+            animation: color-change-3x 4s linear infinite alternate both;
+  }
+
 * {
-    font-family: $font-family-base;
-    color: $neutral-color-high-pure;
+    font-family: $font-family-display;
+    color: $brand-color-primary-dark;
     box-sizing: border-box;
+}
+
+h1 {
+    font-size: $font-size-giant;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2 {
+    font-weight: lighter;
+    color: $neutral-color-high-light;
+    font-size: 24px;
+    text-align: center;
+    min-width: 22vw;
+    line-height: 1.2;
 }
 
 .flex {

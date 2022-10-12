@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dela-mix';
+
+onClickMenu(){
+    document.getElementById("menu").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+  }
 }
