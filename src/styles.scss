@@ -40,7 +40,8 @@ h1 {
     margin-top: 0;
 
     @media(max-width:768px) {
-        font-size: $font-size-xxl;
+        font-size: $font-size-xxxl;
+        line-height: 0.86;
     }
 }
 
@@ -53,7 +54,7 @@ h2 {
     line-height: 1.2;
     
     @media(max-width:768px) {
-        font-size: $font-size-xs;
+        font-size: $font-size-xxs;
     }
 }
 

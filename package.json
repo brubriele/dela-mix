@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "stage": "firebase hosting:channel:deploy preview_release-1.0.0",
     "prod": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
