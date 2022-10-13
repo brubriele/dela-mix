@@ -9,12 +9,7 @@
 }
 
 .grid {
-        // * {
-        //         font-size: 10px;
-        // }
-
         &__parent {
-
                 display: grid;
                 grid-template-columns: 20% 18% 20% 20% 22%;
                 grid-template-rows: 2fr 100px;
@@ -26,11 +21,9 @@
 
                 @media(max-width:768px) {
                         display: grid;
-                        /* grid-template-columns: repeat(3, 1fr); */
-                        /* grid-template-rows: repeat(6, 24vh); */
                         grid-column-gap: 8px;
                         grid-row-gap: 8px;
-                        grid-template-columns: 30% 30%;
+                        grid-template-columns: repeat(2, 30%);
                         grid-template-rows: repeat(6, 16vh);
                 }
 
@@ -66,9 +59,12 @@
                                 }
                         }
 
-                        &:not(&.yellow) {
-                                @media(max-width:768px) {
-                                        display: none;
+                        &.red {
+                                img {
+                                        @media(max-width:768px) {
+                                                display: none;
+
+                                        }
                                 }
                         }
 
@@ -104,8 +100,7 @@
                                 @media(max-width:768px) {
                                         grid-row: 3;
                                         justify-self: baseline;
-                                        /* grid-column: 2; */
-                                        top: 0;
+                                        top: 8vh;
 
                                         img {
                                                 max-width: 72vw;
@@ -115,9 +110,7 @@
 
                         &.menu {
                                 @media(max-width:768px) {
-                                        grid-column: 2;
-                                        grid-row: 1;
-                                        justify-self: flex-start;
+                                        max-height: 20.2vh;
                                         position: fixed;
                                         top: 0;
                                         right: 0;
@@ -137,10 +130,30 @@
                         &.logo {
                                 justify-self: end;
 
+
+                                img {
+                                        &.header-change {
+                                                @media(max-width:768px) {
+                                                        transition: transform 0.25s;
+                                                        transform: scale(0.4);
+                                                        margin-left: -8vw;
+                                                }
+                                        }
+
+                                        &:not(.header-change) {
+                                                @media(max-width:768px) {
+                                                        transition: transform 0.25s;
+                                                        transform: inherit;
+                                                        margin-left: 0;
+                                                }
+                                        }
+                                }
+
                                 @media(max-width: 768px) {
                                         grid-column: 1;
                                         justify-self: baseline;
                                         position: fixed;
+                                        min-height: 18.2vh;
                                 }
                         }
 
@@ -148,7 +161,7 @@
                                 @media(max-width: 768px) {
                                         position: relative;
                                         left: 24vw;
-                                        bottom: 6vh;
+                                        bottom: 0vh;
                                         grid-row: 3;
                                         grid-column: 2;
                                 }
@@ -172,9 +185,10 @@
                                         top: 10vh;
                                         right: 26vw;
                                 }
-                                
+
                                 img {
                                         width: 38vw;
+
                                         @media(max-width:768px) {
                                                 width: 100vw;
 
@@ -212,10 +226,12 @@
                                         display: flex;
                                         flex-direction: column;
                                         justify-content: center;
+                                        z-index: 2;
                                 }
 
                                 button {
                                         @extend %btn;
+
                                         @media(max-width:768px) {
                                                 align-self: center;
                                                 margin: 1em 0px;
@@ -252,11 +268,13 @@
                         align-self: center;
 
                         @media(max-width:768px) {
+                                position: relative;
+                                top: 2vh;
                                 grid-column: 1;
                                 grid-row: 2;
                                 align-self: baseline;
-                                margin-left: 22vw;
-                                min-width: 32vw;
+                                margin-left: 18vw;
+                                min-width: 42vw;
                         }
 
                         @media(min-width:769px) {
@@ -281,12 +299,16 @@
                         z-index: 2;
 
                         @media(max-width:768px) {
+                                position: relative;
+                                height: 16vh;
                                 grid-row: 4;
-                                width: 84vw;
-                                align-self: baseline;
                                 grid-column: 2;
-                                top: 0;
-                                position: initial;
+                                margin-left: 6vw;
+                                align-self: self-end;
+                                top: 6vh;
+                                width: 90vw;
+                                padding: 0.4em 1em;
+
                         }
                 }
 
