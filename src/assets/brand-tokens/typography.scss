@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=League+Spartan:wght@700&family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
 // Family 
 
 $font-family-base: 'Gruppo', cursive;
+$font-family-display: 'League Spartan', sans-serif;
+// $font-family-subtitle: 'League Spartan', sans-serif;
+$font-family-subtitle: 'Sanchez', serif;
+$font-family-btn: 'Archivo', sans-serif;
 
 // Weigth 
 
 $font-weigth-bold: 700;
 $font-weigth-medium: 600;
 $font-weigth-regular: 400;
+
+// Font size 
+
+$font-size-giant: 96px;
+$font-size-display: 80px;
+$font-size-xxl: 48px;
+$font-size-md: 24px;
+$font-size-xs: 16px;

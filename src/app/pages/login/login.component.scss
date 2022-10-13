@@ -1,78 +1,303 @@
-@import 'variables.scss';
+@import '../../../assets/utils/placeholders';
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/brand-tokens/typography.scss';
+@import '../../../assets//brand-tokens/colors.scss';
+
 
 :host {
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        flex-direction: column;
+        margin-left: -4vw;
+}
 
-        .base {
-                width: 100%;
-                height: 100%;
-                flex-direction: column;
-                justify-content: space-around;
+.grid {
+        // * {
+        //         font-size: 10px;
+        // }
 
-                iframe {
-                        position: fixed;
-                        z-index: 2;
-                        width: 30%;
-                        bottom: 0;
-                        position: fixed;
-                        height: 13%;
-                        right: 61%;
-                        opacity: 0.64;
+        &__parent {
 
-                        &:hover {
-                                opacity: inherit;
-                        }
+                display: grid;
+                grid-template-columns: 20% 18% 20% 20% 22%;
+                grid-template-rows: 2fr 100px;
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                justify-items: stretch;
+                align-items: stretch;
+                width: 100vw;
 
-                        @media(max-width: 768px) {
-                                opacity: inherit;
-                                width: 100%;
-                                right: 0;
-                        }
+                @media(max-width:768px) {
+                        display: grid;
+                        /* grid-template-columns: repeat(3, 1fr); */
+                        /* grid-template-rows: repeat(6, 24vh); */
+                        grid-column-gap: 8px;
+                        grid-row-gap: 8px;
+                        grid-template-columns: 30% 30%;
+                        grid-template-rows: repeat(6, 16vh);
                 }
 
                 img {
+                        transform: translateZ(0);
+                }
 
-                        &.rotate-center {
-                                width: 70vw;
-                                border-radius: 0 46% 0 0;
-                                position: fixed;
-                                opacity: 0.8;
-                                top: 36%;
-                                left: 10%;
-                                -webkit-animation: kenburns-bottom-left 5s ease-out both;
-                                animation: kenburns-bottom-left 5s ease-out both;
+                .logo,
+                .banner {
+                        img {
+                                @media(max-width:768px) {
+                                        width: 40vw;
+                                }
+                        }
+                }
 
-                                @media(max-width: 768px) {
-                                        width: 65%;
-                                        top: 68%;
-                                        left: auto;
+                .wiggle {
+                        align-self: center;
+
+                        &.yellow {
+                                @media(max-width:768px) {
+                                        position: relative;
+                                        left: 26vw;
+                                        grid-row: 5;
+                                        grid-column: 2;
+                                        align-self: end;
+                                }
+
+                                img {
+                                        @media(max-width:768px) {
+                                                width: 42vw;
+                                        }
+                                }
+                        }
+
+                        &:not(&.yellow) {
+                                @media(max-width:768px) {
+                                        display: none;
+                                }
+                        }
+
+
+                        img {
+                                width: 18vw;
+                        }
+
+
+                        &.vibrate-1 {
+                                img {
+                                        -webkit-animation: vibrate-1 0.3s linear infinite both;
+                                        animation: vibrate-1 0.3s linear infinite both;
+
                                 }
                         }
                 }
 
                 button {
-                        min-width: 200px;
-                        border-radius: 500px;
-                        background-color: $green-action-primary;
-                        color: white;
-                        border: 0;
-                        cursor: pointer;
-                        position: fixed;
-                        left: 82%;
-                        bottom: 74%;
-                        font-size: 1.2rem;
-                        padding: 14px;
+                        display: flex;
+                        flex-direction: column;
+                }
 
-                        @media(max-width: 768px) {
-                                font-size: 0.8rem;
-                                min-width: 100px;
-                                padding: 10px;
-                                left: 62%;
-                                bottom: 82%;
+                &--item {
+                        justify-self: center;
+
+
+
+                        &.mixer {
+                                position: relative;
+                                top: 14vh;
+
+                                @media(max-width:768px) {
+                                        grid-row: 3;
+                                        justify-self: baseline;
+                                        /* grid-column: 2; */
+                                        top: 0;
+
+                                        img {
+                                                max-width: 72vw;
+                                        }
+                                }
+                        }
+
+                        &.menu {
+                                @media(max-width:768px) {
+                                        grid-column: 2;
+                                        grid-row: 1;
+                                        justify-self: flex-start;
+                                        position: fixed;
+                                        top: 0;
+                                        right: 0;
+                                }
+                        }
+
+                        img {
+                                max-width: 31vw;
+                        }
+
+                        @extend %disco-menu
+                }
+
+                &--item-header {
+
+
+                        &.logo {
+                                justify-self: end;
+
+                                @media(max-width: 768px) {
+                                        grid-column: 1;
+                                        justify-self: baseline;
+                                        position: fixed;
+                                }
+                        }
+
+                        &.banner {
+                                @media(max-width: 768px) {
+                                        position: relative;
+                                        left: 24vw;
+                                        bottom: 6vh;
+                                        grid-row: 3;
+                                        grid-column: 2;
+                                }
+                        }
+
+                        img {
+                                width: 15vw;
                         }
                 }
+
+                &--item-r3 {
+                        grid-row: 3;
+                        align-self: end;
+
+
+                        &.wave-right {
+
+                                @media(max-width:768px) {
+                                        grid-row: 5;
+                                        position: relative;
+                                        top: 10vh;
+                                        right: 26vw;
+                                }
+                                
+                                img {
+                                        width: 38vw;
+                                        @media(max-width:768px) {
+                                                width: 100vw;
+
+                                        }
+                                }
+                        }
+
+                        &.wave-left {
+                                @media(max-width:768px) {
+                                        display: none;
+                                }
+
+                                img {
+                                        width: 28vw;
+                                        position: relative;
+                                        bottom: 2vh;
+                                        z-index: -1;
+                                }
+                        }
+
+                        img {
+                                width: 22vw;
+                        }
+
+                        &.button-group {
+                                height: 25vh;
+
+                                @media(max-width:768px) {
+                                        grid-row: 6;
+                                        width: 100vw;
+                                        position: absolute;
+                                        top: 92.6vh;
+                                        background-color: #efb08b;
+                                        border-top: 4px solid black;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                }
+
+                                button {
+                                        @extend %btn;
+                                        @media(max-width:768px) {
+                                                align-self: center;
+                                                margin: 1em 0px;
+                                        }
+                                }
+
+                                .btn-primary {
+                                        background-color: $neutral-color-low-pure;
+                                        color: $neutral-color-high-pure;
+
+                                        &:hover {
+                                                background-color: $btn-color-primary-medium;
+                                        }
+                                }
+
+                                .btn-secondary {
+                                        background-color: transparent;
+                                        color: $neutral-color-low-pure;
+
+                                        &:hover {
+                                                background-color: $btn-color-secondary-medium;
+                                        }
+                                }
+
+                        }
+                }
+
+                &--item-r4 {
+                        grid-row: 4;
+                }
+
+                &--item-desc {
+                        grid-column: 2;
+                        align-self: center;
+
+                        @media(max-width:768px) {
+                                grid-column: 1;
+                                grid-row: 2;
+                                align-self: baseline;
+                                margin-left: 22vw;
+                                min-width: 32vw;
+                        }
+
+                        @media(min-width:769px) {
+                                margin-top: 18vh;
+                        }
+                }
+
+                &--item-sub-desc {
+                        position: relative;
+                        top: 10vh;
+                        grid-column: 4;
+                        height: 20vh;
+                        width: 38vw;
+                        border: 10px solid black;
+                        display: flex;
+                        align-content: center;
+                        background-color: #c74c34;
+                        align-self: center;
+                        justify-self: center;
+                        align-items: center;
+                        padding: 0.6em 1em;
+                        z-index: 2;
+
+                        @media(max-width:768px) {
+                                grid-row: 4;
+                                width: 84vw;
+                                align-self: baseline;
+                                grid-column: 2;
+                                top: 0;
+                                position: initial;
+                        }
+                }
+
+        }
+
+        .footer-banner {
+                background: white;
+                position: fixed;
+                width: 100vw;
+                left: 0vw;
+                height: 15vh;
+                bottom: 0vh;
         }
 }
