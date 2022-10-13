@@ -64,6 +64,11 @@
     width: 243.33333333333334px;
     height: 243.33333333333334px;
     overflow: hidden;
+
+    @media(max-width:768px) {
+      position: initial;
+      z-index: initial;
+    }
   }
 
   .menu__active {

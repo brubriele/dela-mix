@@ -1,8 +1,149 @@
-<div class="base flex flex-center">
     <!-- <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1336025248&color=%23f673ad&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djalvesodara" title="DJ Alves ODARA" target="_blank" style="color: #cccccc; text-decoration: none;">DJ Alves ODARA</a> · <a href="https://soundcloud.com/djalvesodara/juice" title="Juice SET #2 Dj Alves ODARA" target="_blank" style="color: #cccccc; text-decoration: none;">Juice SET #2 Dj Alves ODARA</a></div> -->
+    <div class="grid">
 
-    <!-- <button (click)="openLoginPage()">
-        Abrir meu Spotify
-    </button> -->
+        <div class="grid__parent">
+            <div class="grid__parent--item-header logo">
+                <img src="../assets/bg-elements/logo_dj.svg" alt="" srcset="">
+            </div>
+            <div class="grid__parent--item-header wiggle vibrate-1">
+                <img src="../assets/bg-elements/bold_fun_wiggle 2.svg" alt="" srcset="">
+            </div>
+            <div class="grid__parent--item-header banner">
+                <img src="../assets/bg-elements/banner-sample1.png" alt="" srcset="">
+                <!-- <img src="../assets/bg-elements/frame 2.svg" alt="" srcset=""> -->
+            </div>
+            <div class="grid__parent--item mixer">
+                <img src="../assets/bg-elements/mixer_spotify(1) 1.svg" alt="" srcset="">
+            </div>
+            <div class="grid__parent--item menu">
+                <section class="menu menu--circle">
+                    <input type="checkbox" id="menu__active" />
+                    <label for="menu__active" class="menu__active">
+                        <div class="menu__toggle">
+                            <div class="icon">
+                                <div class="hamburger"></div>
 
-</div>
+                            </div>
+                        </div>
+                        <input type="radio" name="arrow--up" id="degree--up-0" />
+                        <input type="radio" name="arrow--up" id="degree--up-1" />
+                        <input type="radio" name="arrow--up" id="degree--up-2" />
+                        <div class="menu__listings">
+                            <ul class="circle">
+                                <li>
+                                    <div class="placeholder">
+                                        <div class="upside">
+                                            <a href="#" class="button">DJ Miria</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="placeholder">
+                                        <div class="upside">
+                                            <a href="#" class="button">DJ Pam Odara</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="placeholder">
+                                        <div class="upside">
+                                            <a href="#" class="button">DJ 3</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="placeholder">
+                                        <div class="upside">
+                                            <a href="#" class="button">DJ 3</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="placeholder">
+                                        <div class="upside">
+                                            <a href="#" class="button">DJ 3</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="placeholder">
+                                        <div class="upside">
+                                            <a href="#" class="button">DJ 3</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="placeholder">
+                                        <div class="upside">
+                                            <a href="#" class="button">DJ 3</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="placeholder">
+                                        <div class="upside">
+                                            <a href="#" class="button">DJ 3</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="placeholder">
+                                        <div class="upside">
+                                            <a href="#" class="button">DJ 4</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="placeholder">
+                                        <div class="upside">
+                                            <a href="#" class="button">DJ 5</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu__arrow menu__arrow--top">
+                            <ul>
+                                <li>
+                                    <label for="degree--up-0">
+                                        <div class="arrow"></div>
+                                    </label>
+                                    <label for="degree--up-1">
+                                        <div class="arrow"></div>
+                                    </label>
+                                    <label for="degree--up-2">
+                                        <div class="arrow"></div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </label>
+                </section>
+            </div>
+            <div class="grid__parent--item-desc">
+                <h1>data, set & mix</h1>
+                <span>web studio</span>
+            </div>
+            <div class="grid__parent--item-sub-desc">
+                <h2> An exploration of how Gen Z and millennials are shaping audio streaming and culture at large. An
+                    exploration of how Gen Z and millennials are shaping audio streaming and culture at large.</h2>
+            </div>
+            <div class="grid__parent--item-r3 wave-left">
+                <img src="../assets/bg-elements/bold_fun_line 2.svg" alt="" srcset="">
+            </div>
+            <div class="grid__parent--item-r3 button-group">
+                <button class="grid__parent--item-r3 btn-secondary" (click)="openLoginPage()">Acessar Player
+                    Mix</button>
+                <!-- <button class="grid__parent--item-r3 btn-secondary" >Acessar Player Mix</button> -->
+                <button class="grid__parent--item-r3 btn-primary">Sobre o projeto</button>
+            </div>
+            <div class="grid__parent--item-r3 wiggle yellow vibrate-1">
+                <img src="../assets/bg-elements/bold_fun_wiggle_yellow 1.svg" alt="" srcset="">
+            </div>
+            <div class="grid__parent--item-r3 wave-right">
+                <img src="../assets/bg-elements/wave 1.svg" alt="" srcset="">
+            </div>
+        </div>
+        <!-- <div class="footer-banner">
+    </div> -->
+    </div>
