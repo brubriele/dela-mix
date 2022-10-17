@@ -33,6 +33,7 @@
 
                 .logo,
                 .banner {
+                        z-index: 1;
                         img {
                                 @media(max-width:768px) {
                                         width: 40vw;
@@ -153,7 +154,7 @@
                                         grid-column: 1;
                                         justify-self: baseline;
                                         position: fixed;
-                                        min-height: 18.2vh;
+                                        min-height: 14.2vh;
                                 }
                         }
 
@@ -266,6 +267,7 @@
                 &--item-desc {
                         grid-column: 2;
                         align-self: center;
+                        z-index: -1;
 
                         @media(max-width:768px) {
                                 position: relative;
@@ -288,7 +290,7 @@
                         grid-column: 4;
                         height: 20vh;
                         width: 38vw;
-                        border: 10px solid black;
+                        border: 4px solid black;
                         display: flex;
                         align-content: center;
                         background-color: #c74c34;
