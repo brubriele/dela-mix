@@ -2,6 +2,7 @@
 @import 'variables.scss';
 @import './assets/brand-tokens/colors.scss';
 @import './assets/brand-tokens/typography.scss';
+@import '../src/assets/utils/placeholders';
 
 html,
 body {
@@ -23,10 +24,10 @@ body {
 
 
 
-.color-change-3x {
-    -webkit-animation: color-change-3x 4s linear infinite alternate both;
-            animation: color-change-3x 4s linear infinite alternate both;
-  }
+// .color-change-3x {
+//     -webkit-animation: color-change-3x 4s linear infinite alternate both;
+//             animation: color-change-3x 4s linear infinite alternate both;
+//   }
 
 * {
     font-family: $font-family-display;
@@ -39,6 +40,20 @@ h1 {
     margin-bottom: 0;
     margin-top: 0;
 
+    &.header-change {
+        @media(max-width:375px) {
+            font-size: $font-size-xxl;
+            margin-top: 1em;
+        }
+        @media(max-width:360px) {
+            margin-top: 0;
+        }
+    }
+    
+    @media(max-width:375px) {
+        margin-top: -0.28em;
+    }
+
     @media(max-width:768px) {
         font-size: $font-size-xxxl;
         line-height: 0.86;
@@ -48,13 +63,23 @@ h1 {
 h2 {
     font-weight: lighter;
     color: $neutral-color-high-light;
-    font-size: 24px;
+    font-size: $font-size-md;
     text-align: center;
     min-width: 22vw;
     line-height: 1.2;
+
+  
     
+    @media(max-width:375px) {
+        line-height: 1;
+    }
+
     @media(max-width:768px) {
         font-size: $font-size-xxs;
+    }
+
+    & > a {
+        @extend %link
     }
 }
 
