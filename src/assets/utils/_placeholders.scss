@@ -132,6 +132,12 @@ $bezier: cubic-bezier(0.75, 0, 0.25, 1);
           z-index: 9;
           transform: none;
           transition: 0.5s $bezier;
+
+          @media(min-width: 769px) {
+            background-color: $feedback-color-warning-pure;
+            left: 40vw;
+            border-left: 4px solid black;
+          }
         }
       }
     }
