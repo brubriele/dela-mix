@@ -135,7 +135,7 @@ $bezier: cubic-bezier(0.75, 0, 0.25, 1);
 
           @media(min-width: 769px) {
             background-color: $feedback-color-warning-pure;
-            left: 40vw;
+            left: 39.8vw;
             border-left: 4px solid black;
           }
         }
@@ -158,13 +158,18 @@ $bezier: cubic-bezier(0.75, 0, 0.25, 1);
       transform: translate(100vw) rotate(42deg);
       transition: 0.2s $bezier;
       border-top: 4px solid black;
+
+      @media(max-width:768px) {
+        transform: translate(100vw) rotate(20deg);
+      }
+
     }
 
     &__item {
       list-style: none;
       @media(max-width:768px) {
         position: relative;
-        top: 8vh;
+        top: -3vh;
         height: 7vh;
       }
 

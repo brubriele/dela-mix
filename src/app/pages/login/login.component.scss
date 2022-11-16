@@ -34,9 +34,10 @@
                 .logo,
                 .banner {
                         z-index: 1;
+
                         img {
                                 @media(max-width:768px) {
-                                        width: 40vw;
+                                        width: 37vw;
                                 }
                         }
                 }
@@ -95,16 +96,19 @@
 
 
                         &.mixer {
-                                position: relative;
-                                top: 14vh;
-
+                                position: absolute;
+                                top: 18vh;
+                                right: -4vw;
+                                
                                 @media(max-width:768px) {
+                                        right: 0;
+                                        left: 1vw;
                                         grid-row: 3;
                                         justify-self: baseline;
-                                        top: 8vh;
+                                        top: 34vh;
 
                                         img {
-                                                max-width: 72vw;
+                                                max-width: 112vw;
                                         }
                                 }
                         }
@@ -119,7 +123,7 @@
                         }
 
                         img {
-                                max-width: 31vw;
+                                max-width: 42vw;
                         }
 
                         @extend %disco-menu
@@ -161,8 +165,8 @@
                         &.banner {
                                 @media(max-width: 768px) {
                                         position: relative;
-                                        left: 24vw;
-                                        bottom: 0vh;
+                                        left: 28vw;
+                                        bottom: 17vh;
                                         grid-row: 3;
                                         grid-column: 2;
                                 }
@@ -207,6 +211,7 @@
                                         position: relative;
                                         bottom: 2vh;
                                         z-index: -1;
+                                        right: 1vw;
                                 }
                         }
 
@@ -321,15 +326,16 @@
                 position: fixed;
                 width: 100vw;
                 left: 0vw;
-                height: 12vh;
+                height: 10vh;
                 bottom: 0vh;
 
                 @media(max-width: 768px) {
                         height: 25vh;
                 }
-                
+
                 iframe {
                         width: 40vw;
+
                         @media(max-width: 768px) {
                                 width: 100vw;
                                 height: 20vh;
